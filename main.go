@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/Eagle-X/witch/system"
+	"github.com/barryz/witch/system"
 )
 
 // Variables

@@ -6,7 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Eagle-X/witch/system"
+	"github.com/barryz/witch/system"
+
 	"github.com/braintree/manners"
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/auth"
