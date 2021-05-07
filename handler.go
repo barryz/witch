@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/Eagle-X/witch/system"
+	"github.com/barryz/witch/system"
 	"github.com/martini-contrib/render"
 )
 

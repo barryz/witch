@@ -6,10 +6,12 @@ GO_PKGS=$(shell go list ./... | grep -v '/vendor/')
 default: build
 
 build:
-	go build
+	go build -o bin/witch 
+
+build-linux:
+	CGO_ENABLED=0 GOARCH=amd64 GOOS=linux go build -o bin/witch-linux
 
 dep:
-	godep get -t ${GO_PKGS}
-	godep save -t ${GO_PKGS}
+	go mod tidy
 
 .PHONY: witch
